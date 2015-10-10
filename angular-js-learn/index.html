@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html ng-app="phonecatApp">
+
 <head>
-<meta charset="UTF-8">
-<title>AngularJS test</title>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-<script src="angulartest.js"></script>
-<!-- <link href="eyewiretest.css" rel="stylesheet" /> -->
+    <meta charset="UTF-8">
+    <title>AngularJS Demos</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+
+    <!-- Our JS -->
+    <script src="angulartest.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body ng-controller="PhoneListCtrl">
 	<ul>
 		<li ng-repeat="phone in phones"><span>{{phone.name}}</span>
 			<p>{{phone.snippet}} - {{gob()}}</p></li>
 	</ul>
 	<p>Total length: {{phones.length}}</p>
-    <p>Total length: {{name}}</p>
-    
-    <table border="1">
-        <tr><th>row</th></tr>
-        <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{i}}</td></tr>
-    </table>
-    
+	<p>Total length: {{name}}</p>
+
+	<table border="1">
+		<tr>
+			<th>row</th>
+		</tr>
+		<tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]">
+			<td>{{i}}</td>
+		</tr>
+	</table>
+
 </body>
 </html>
