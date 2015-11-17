@@ -22,3 +22,22 @@ phonecatApp.controller('PhoneListCtrl', function($scope) {
         return "GOOOBIIEE6";
     }
 });
+
+
+var testModule001 = angular.module('testModule001', []);
+
+/**
+ * The 'DemoController1' CONTROLLER CONSTRUCTOR FUNCTION.
+ */
+testModule001.controller('DemoController1', ['$scope', 'serviceWithoutDependencies', function($scope, serviceWithoutDependencies) {
+    
+}])
+
+/**
+ * This is the 'serviceWithoutDependencies' SERVICE FACTORY FUNCTION.
+ */
+testModule001.factory('serviceWithoutDependencies', [function() {
+    console.log("Constructing the 'serviceWithoutDependencies' service instance");
+    
+}]);
+
